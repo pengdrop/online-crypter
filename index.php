@@ -19,6 +19,5 @@
 
 	}
 
-	//error(404);
 	header("Location: /#!/");
 	die;
