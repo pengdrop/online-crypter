@@ -106,9 +106,9 @@ $(function(){
 				setTitle();
 				maker.addH2("", "", 'Welcome to Crypto Online!');
 				maker.addP("", "", 'Please select cipher from the list on the left.');
-				maker.addHtml('<img src="/img/bg.png" style="width: 470px; height: 369px;">');
+				maker.addHtml('<img src="./img/bg.png" style="width: 470px; height: 369px;">');
 				maker.addP("", "", 'This website optimized for google chrome.');
-				maker.addP("", "", 'If you want, you can contact me by: <a href="mailto:fuzzer@nate.com">fuzzer@nate.com</a>');
+				maker.addP("", "", 'If you want, you can contact me by: <a href="mailto:plzdonotsay@gmail.com">plzdonotsay@gmail.com</a>');
 				break;
 
 			case "encode":
