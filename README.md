@@ -4,4 +4,4 @@
 
 Cipher, Encrypt, Hash, Convert string in Web!
 
-<https://safflower.github.io/crypto-online/#!/>
+<https://crypto.safflower.pw/#!/>
