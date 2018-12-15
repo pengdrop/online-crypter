@@ -81,7 +81,7 @@ $(function(){
 	});
 
 	function setTitle(title){
-		$("title").html((title ? title + " | " : "") + "Crypto Online");
+		$("title").html((title ? title + " | " : "") + "Online Crypter");
 	}
 
 	/*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*	*/
@@ -104,7 +104,7 @@ $(function(){
 		switch(hashes[1]){
 			case "":
 				setTitle();
-				maker.addH2("", "", 'Welcome to Crypto Online!');
+				maker.addH2("", "", 'Welcome to Online Crypter!');
 				maker.addP("", "", 'Please select cipher from the list on the left.');
 				maker.addHtml('<img src="./img/bg.png" style="width: 470px; height: 369px;">');
 				maker.addP("", "", 'This website optimized for google chrome.');
@@ -112,7 +112,7 @@ $(function(){
 				break;
 
 			case "encode":
-				maker.addPath('/#!/'+hashes[1], "Encode");
+				maker.addPath('./#!/'+hashes[1], "Encode");
 
 				// start encode
 				switch(hashes[2]){
@@ -122,7 +122,7 @@ $(function(){
 
 					case "url":
 						setTitle("URL Encode");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "URL");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "URL");
 
 						maker.addH2("work-type", "", "URL Encode");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -146,7 +146,7 @@ $(function(){
 
 					case "hex":
 						setTitle("Hex Encode");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Hex");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Hex");
 
 						maker.addH2("work-type", "", "Hex Encode");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -170,7 +170,7 @@ $(function(){
 
 					case "uu":
 						setTitle("UU Encode");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "UU");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "UU");
 
 						maker.addH2("work-type", "", "UU Encode");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -194,7 +194,7 @@ $(function(){
 
 					case "html":
 						setTitle("HTML Encode");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "HTML");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "HTML");
 
 						maker.addH2("work-type", "", "HTML Encode");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -218,7 +218,7 @@ $(function(){
 
 					case "morse":
 						setTitle("Morse Code");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Morse");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Morse");
 
 						maker.addH2("work-type", "", "Morse Code");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -242,7 +242,7 @@ $(function(){
 
 					case "base32":
 						setTitle("Base32 Encode");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Base32");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Base32");
 
 						maker.addH2("work-type", "", "Base32 Encode");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -266,7 +266,7 @@ $(function(){
 
 					case "base58":
 						setTitle("Base58 Encode");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Base58");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Base58");
 
 						maker.addH2("work-type", "", "Base58 Encode");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -290,7 +290,7 @@ $(function(){
 
 					case "base64":
 						setTitle("Base64 Encode");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Base64");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Base64");
 
 						maker.addH2("work-type", "", "Base64 Encode");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -314,7 +314,7 @@ $(function(){
 
 					case "base85":
 						setTitle("Base85 Encode");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Base85");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Base85");
 
 						maker.addH2("work-type", "", "Base85 Encode");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -338,7 +338,7 @@ $(function(){
 
 					case "utf-8":
 						setTitle("UTF-8 Encode");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "UTF-8");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "UTF-8");
 
 						maker.addH2("work-type", "", "UTF-8 Encode");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -362,7 +362,7 @@ $(function(){
 
 					case "utf-16":
 						setTitle("UTF-16 Encode");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "UTF-16");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "UTF-16");
 
 						maker.addH2("work-type", "", "UTF-16 Encode");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -392,7 +392,7 @@ $(function(){
 				break;
 
 			case "cipher":
-				maker.addPath('/#!/'+hashes[1], "Cipher");
+				maker.addPath('./#!/'+hashes[1], "Cipher");
 
 				// start cipher
 				switch(hashes[2]){
@@ -402,7 +402,7 @@ $(function(){
 
 					case "caesar":
 						setTitle("Caesar Cipher");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Caesar");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Caesar");
 
 						maker.addH2("work-type", "", "Caesar Cipher");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -427,7 +427,7 @@ $(function(){
 
 					case "keyword":
 						setTitle("Keyword Cipher");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Keyword");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Keyword");
 
 						maker.addH2("work-type", "", "Keyword Cipher");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -456,7 +456,7 @@ $(function(){
 
 					case "vigenere":
 						setTitle("Vigenere Cipher");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Vigenere");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Vigenere");
 
 						maker.addH2("work-type", "", "Vigenere Cipher");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -487,7 +487,7 @@ $(function(){
 				break;
 
 			case "encrypt":
-				maker.addPath('/#!/'+hashes[1], "Encrypt");
+				maker.addPath('./#!/'+hashes[1], "Encrypt");
 
 				// start encrypt
 				switch(hashes[2]){
@@ -497,7 +497,7 @@ $(function(){
 
 					case "aes":
 						setTitle("AES Encrypt");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "AES");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "AES");
 
 						maker.addH2("work-type", "", "AES Encrypt");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -524,7 +524,7 @@ $(function(){
 
 					case "rc4":
 						setTitle("RC4 Encrypt");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "RC4");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "RC4");
 
 						maker.addH2("work-type", "", "RC4 Encrypt");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -551,7 +551,7 @@ $(function(){
 
 					case "des":
 						setTitle("DES Encrypt");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "DES");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "DES");
 
 						maker.addH2("work-type", "", "DES Encrypt");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -578,7 +578,7 @@ $(function(){
 
 					case "blowfish":
 						setTitle("Blowfish Encrypt");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Blowfish");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Blowfish");
 
 						maker.addH2("work-type", "", "Blowfish Encrypt");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -606,7 +606,7 @@ $(function(){
 				break;
 
 			case "hash":
-				maker.addPath('/#!/'+hashes[1], "Hash");
+				maker.addPath('./#!/'+hashes[1], "Hash");
 
 				// start hash
 				switch(hashes[2]){
@@ -616,7 +616,7 @@ $(function(){
 
 					case "crc16":
 						setTitle("CRC16 Hash");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "CRC16");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "CRC16");
 
 						maker.addH2("work-type", "", "CRC16 Hash");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -633,7 +633,7 @@ $(function(){
 
 					case "crc32":
 						setTitle("CRC32 Hash");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "CRC32");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "CRC32");
 
 						maker.addH2("work-type", "", "CRC32 Hash");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -650,7 +650,7 @@ $(function(){
 
 					case "adler32":
 						setTitle("Adler32 Hash");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Adler32");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Adler32");
 
 						maker.addH2("work-type", "", "Adler32 Hash");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -667,7 +667,7 @@ $(function(){
 
 					case "md2":
 						setTitle("MD2 Hash");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "MD2");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "MD2");
 
 						maker.addH2("work-type", "", "MD2 Hash");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -684,7 +684,7 @@ $(function(){
 
 					case "md4":
 						setTitle("MD4 Hash");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "MD4");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "MD4");
 
 						maker.addH2("work-type", "", "MD4 Hash");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -701,7 +701,7 @@ $(function(){
 
 					case "md5":
 						setTitle("MD5 Hash");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "MD5");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "MD5");
 
 						maker.addH2("work-type", "", "MD5 Hash");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -718,7 +718,7 @@ $(function(){
 
 					case "sha1":
 						setTitle("SHA1 Hash");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "SHA1");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "SHA1");
 
 						maker.addH2("work-type", "", "SHA1 Hash");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -735,7 +735,7 @@ $(function(){
 
 					case "sha224":
 						setTitle("SHA224 Hash");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "SHA224");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "SHA224");
 
 						maker.addH2("work-type", "", "SHA224 Hash");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -752,7 +752,7 @@ $(function(){
 
 					case "sha256":
 						setTitle("SHA256 Hash");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "SHA256");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "SHA256");
 
 						maker.addH2("work-type", "", "SHA256 Hash");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -769,7 +769,7 @@ $(function(){
 
 					case "sha384":
 						setTitle("SHA384 Hash");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "SHA384");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "SHA384");
 
 						maker.addH2("work-type", "", "SHA384 Hash");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -786,7 +786,7 @@ $(function(){
 
 					case "sha512":
 						setTitle("SHA512 Hash");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "SHA512");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "SHA512");
 
 						maker.addH2("work-type", "", "SHA512 Hash");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -803,7 +803,7 @@ $(function(){
 
 					case "whirlpool":
 						setTitle("Whirlpool Hash");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Whirlpool");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Whirlpool");
 
 						maker.addH2("work-type", "", "Whirlpool Hash");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -826,7 +826,7 @@ $(function(){
 				break;
 
 			case "misc":
-				maker.addPath('/#!/'+hashes[1], "Misc");
+				maker.addPath('./#!/'+hashes[1], "Misc");
 
 				// start misc
 				switch(hashes[2]){
@@ -836,7 +836,7 @@ $(function(){
 
 					case "uppercase":
 						setTitle("Uppercase");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Uppercase");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Uppercase");
 
 						maker.addH2("work-type", "", "Uppercase");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -853,7 +853,7 @@ $(function(){
 
 					case "lowercase":
 						setTitle("Lowercase");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Lowercase");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Lowercase");
 
 						maker.addH2("work-type", "", "Lowercase");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -870,7 +870,7 @@ $(function(){
 
 					case "capitalize":
 						setTitle("Capitalize");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Capitalize");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Capitalize");
 
 						maker.addH2("work-type", "", "Capitalize");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -887,7 +887,7 @@ $(function(){
 
 					case "reverse":
 						setTitle("Reverse");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Reverse");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Reverse");
 
 						maker.addH2("work-type", "", "Reverse");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
@@ -904,7 +904,7 @@ $(function(){
 
 					case "shuffle":
 						setTitle("Shuffle");
-						maker.addPath('/#!/'+hashes[1]+'/'+hashes[2], "Shuffle");
+						maker.addPath('./#!/'+hashes[1]+'/'+hashes[2], "Shuffle");
 
 						maker.addH2("work-type", "", "Shuffle");
 						maker.addTextarea("before-text", "", "Text", "12", true, "", true);
