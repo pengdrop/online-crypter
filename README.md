@@ -1,8 +1,8 @@
-# Online Cryper
+# Online Crypter
 
 ![main](https://i.imgur.com/Nu0Z8kN.png)
 
-Cipher, Encrypt, Hash, Convert string in Web!
+Let's crypt the string easily in website.
 
 <https://crypt.safflower.pw>
 
