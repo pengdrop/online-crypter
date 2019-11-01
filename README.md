@@ -4,5 +4,5 @@
 
 Let's crypt the string easily in website.
 
-<https://crypt.safflower.pw>
+<https://crypt.safflower.me>
 
